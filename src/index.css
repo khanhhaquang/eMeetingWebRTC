@@ -1,0 +1,80 @@
+
+input[type= "search"]{
+  border-sizing: border-box;
+}
+
+.table td, .table th {
+  border-top: none
+}
+
+button, input {
+  overflow: visible;
+}
+button, input, optgroup, select, textarea {
+}
+
+button, html [type="button"], [type="reset"], [type="submit"] {
+  -webkit-appearance: button;
+}
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html,body,#root {
+  height: 100%;
+}
+html {
+	font-family: 'Tahoma';
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	font-family: 'Tahoma';
+	color: #484848;
+	position: relative;
+	width: 100%;
+}
+
+body {
+	background-color: #ededed;
+	font-size: 12px;
+}
+
+p {
+	font-size: 18px;
+	font-family: 'Tahoma';
+	font-weight: 300;
+	line-height: 36px;
+	color: #484848;
+}
+
+li {
+	font-size: 14px;
+	line-height: 30px;
+	color: #484848;
+}
+
+a {
+	color: rgb(0, 125, 87);
+}
+
+h3 {
+	color: #484848;
+	font-family: 'Tahoma' !important;
+	font-weight: bold;
+	line-height: 36px;
+	font-size: 22px;
+}
+
+h2 {
+	font-family: 'Tahoma' !important;
+	font-weight: lighter;
+	font-size: 36px;
+	line-height: 30px;
+	color: #484848;
+}
+
+h1 {
+	font-size: 64px;
+}

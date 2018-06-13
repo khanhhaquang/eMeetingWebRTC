@@ -1,0 +1,158 @@
+.h2Intro {
+	font-family: 'Tahoma' !important;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 36px;
+	line-height: 30px;
+}
+
+.Intro {
+	clear: both;
+}
+
+.TitleIntro {
+	padding-bottom: 35px;
+}
+
+.introRight {
+	float: right;
+}
+
+.introLeft {
+	float: left;
+	padding-top: 50px;
+}
+
+.introLeft img {
+	margin-left: 3px;
+}
+
+.introOne {
+	text-align: left;
+	width: 465px;
+}
+
+.introTwo {
+	text-align: right;
+	width: 465px;
+	padding-top: 50px;
+}
+
+.introThree {
+	width: 465px;
+	padding-top: 50px;
+}
+
+.imgIntro {
+	padding-top: 50px;
+}
+
+.BigRow {
+	float: left;
+	clear: both;
+	width: 100%;
+}
+
+.BigRow:after {
+	clear: both;
+}
+
+.Row {
+	max-width: 1038px;
+	margin: 0 auto;
+}
+
+.h1-tut {
+	text-align: center;
+	font-size: 45px;
+	color: #484848;
+	margin-bottom: 20px;
+	font-style: normal;
+	font-weight: lighter;
+}
+
+.Banner {
+	height: 443px;
+	background: url(../../images/homePage/background.png) no-repeat left top;
+	background-repeat: round;
+}
+
+.ImageBanner {
+	margin-top: 64px;
+	height: 492px;
+	background: url(../../images/homePage/banner-img.png) no-repeat left top;
+}
+
+.BannerContent {
+	float: right;
+	margin-top: 31px;
+}
+
+.BannerContent a {
+	font-family: Roboto;
+	font-size: 14px;
+	color: #363838;
+	text-decoration: none;
+	line-height: 42px;
+}
+
+.BannerContent a:visited {
+	font-family: Roboto;
+	font-size: 14px;
+	color: #363838;
+	text-decoration: none;
+}
+
+.BannerContent span {
+	color: #FFFFFF;
+	font-size: 18px;
+}
+
+.BannerContent>div {
+	padding-bottom: 25px;
+}
+
+.BannerContent img {
+	margin-right: 12px;
+}
+
+.trial-login img {
+	margin-top: 4px;
+	margin-left: 37px;
+}
+
+.BannerContent button {
+	height: 37px;
+	border-radius: 2px;
+	padding-left: 13px;
+	padding-right: 13px;
+	margin-left: 37px;
+	margin-top: 3px;
+	background-color: #FFF;
+	border: 0px;
+}
+
+.BannerImage {
+	position: absolute;
+}
+
+.pBanner {
+	text-align: right;
+	color: white;
+	font-size: 28px;
+	font-style: normal;
+	font-weight: normal;
+}
+
+.pBannerContent {
+	text-align: right;
+	color: white;
+	font-size: 17px;
+}
+
+.Contact {
+	padding-top: 50px;
+	text-align: center;
+	clear: both;
+	width: 911px;
+}

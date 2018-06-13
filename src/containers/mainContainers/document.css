@@ -1,0 +1,105 @@
+.closeBtn{
+    float: right;
+    text-align: right;
+}
+
+.popup_div{
+    display: none; 
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.titlemodul {
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 34px;
+    width: 25%;
+}
+
+.searchform_ {
+    float: right;
+    height: 24px;
+    margin-top: 4px;
+}
+.grayText {
+    padding-left: 3px;
+    font-size: 10px;
+}
+.searchbt {
+    margin-top: 5px;
+    float: right;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+.grayText {
+    width: 344px;
+    height: 20px;
+    border: 1px solid #a3a3a3;
+    font-family: arial;
+}
+.grayText {
+    line-height: 20px;
+}
+
+.actionresource {
+    border: none;
+    background-color: #fff;
+    height: 35px;
+}
+
+.actionresource tr td {
+    padding-top: 7px;
+    background-color: #ededed;
+}
+
+#createResource .ui-widget {
+    width: 120px!important;
+}
+.ui-widget {
+    font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif;
+    font-size: 1.1em;
+}
+
+#createResource .ui-helper-clearfix {
+    width: 100px!important;
+}
+.ui-helper-clearfix {
+    zoom: 1;
+}
+.ui-helper-clearfix:after {
+    clear: both;
+}
+.ui-helper-clearfix:before, .ui-helper-clearfix:after {
+    content: "";
+    display: table;
+}
+
+.px-form-input {
+    float: left;
+}
+
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+    font-family: Arial;
+    font-size: 1em;
+}
+
+
+#uploadForm .ui-state-default {
+    border: 1px solid #cccccc;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007d57;
+}
+#createResource .ui-widget {
+    width: 120px!important;
+}
+
+
+.fa-plus-circle {
+    z-index: 2;
+    color: #ffa01c;
+    position: absolute;
+    float: left;
+    margin: 6px 0 0 3px;
+    font-size: 12px;
+}

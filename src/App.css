@@ -1,0 +1,48 @@
+.App {
+    position: relative;
+    background: #f6f6f6;
+    min-height: 100%;
+    width: 100%;
+}
+
+#to_top {position: fixed;bottom: 20px;right: 20px;z-index: 9999;display: none;}
+#logo{margin-left: 0px;margin-top: 0px;width: 98px;height: 85px;}
+
+.ContactContent{width: 911px;}
+.bContact{color: rgb(0, 125, 87);font-style: normal;color: rgb(0, 125, 87);text-decoration: none;}
+
+.hr-eMeeting{text-align: center;}
+.Tut{padding-bottom: 50px;}
+.TutIn{padding-bottom: 15px;}
+.liTut{color: #484848;margin: 0;}
+.imageTut{margin-bottom: 75px;}
+.titleImage{font-size: 14px;font-style: italic;}
+.Bkav{font-weight: bold;}
+.Permission{padding-top: 54px;}
+.listPer{list-style-type: none;}.titlePer{margin-bottom: 20px;}
+.perCircle{color: black;font-size: 14px;}
+
+#createSucsess {
+	position: absolute;
+	top: 200px;
+	left: 36%;
+	display: none;
+	color: #000;
+	padding: 30px 30px 30px 30px;
+	font-size: 15px;
+	font-weight: bold;
+	background-color: #ddd;
+	border: 1px solid #a3a3a3;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	z-index: 9999;
+}
+
+
+.haicham {color: #ed1c24;}
+body > iframe {display: none;}
+
+
+
+
+

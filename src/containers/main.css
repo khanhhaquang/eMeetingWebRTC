@@ -1,0 +1,81 @@
+#outer {
+    background-color: #3a3a3a;
+    height: auto;
+    padding: 0;
+    width: 1000px;
+    background: none;
+}
+#content {
+    width: 100%;
+    float: left;
+    margin-top: 20px;
+    min-height: 430px;
+    height: auto;
+    border-radius: 8px 8px 0px 0px;
+}
+#createBtn:hover{
+    background-color: orange;
+}
+#createBtn {
+    cursor: pointer;
+    width: auto;
+    padding-right: 15px;
+    height: 40px;
+    float: left;
+    background: url(../images/user/home/bullet_create_btn.png) no-repeat scroll left 20px center transparent;
+    background-color: #007e58;
+    border-radius: 3px;
+    margin-left: 3px;
+    display: block;
+    text-align: left;
+    text-indent: 35px;
+    margin-top: 11px;
+    line-height: 40px;
+    font-family: arial;
+    font-size: 13.18px;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#welcomebar {
+    float: right;
+    margin-top: 8px;
+}
+#welcomebar {
+    width: 300px;
+}
+.hellouser {
+    color: #007c57;
+    font-family: arial;
+    font-size: 17px;
+    clear: both;
+    float: right;
+    text-align: right;
+    margin-bottom: 3px;
+}
+
+.menuButton {
+    font-size: 11px;
+    padding: 1px 3px;
+    float: right;
+    text-align: center;
+    font-family: arial;
+    margin-top: 4px;
+}
+
+.menuButton a {
+    color: #007D57;
+    cursor: pointer;
+    font-family: Tahoma!important;
+    font-size: 11px;
+    padding: 2px 6px;
+    text-decoration: none;
+}
+
+.maincontent {
+    float: left;
+    width: 100%;
+    margin-bottom: 35px;
+}
+

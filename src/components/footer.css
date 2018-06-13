@@ -1,0 +1,166 @@
+.Footer {
+	width: 100%;
+	background-color: #303133;
+	color: #fff;
+	height: 90px;
+	position: absolute;
+    bottom: 0px;
+}
+
+.Footer .Row {
+	background-color: #303133;
+	height: 100%;
+}
+
+.left-footer {
+	float: left;
+	font-weight: bold;
+	margin-top: 15px;
+}
+
+.left-footer a {
+	color: #FFF;
+	font-size: 15px;
+	height: 21px;
+	line-height: 21px;
+	font-weight: bold;
+	font-family: roboto;
+}
+
+.left-footer .phone_icon_div {
+	display: inline-block;
+	float: left;
+	margin-right: 6px;
+	top: 10px;
+	line-height: 47px;
+}
+
+.left-footer ul {
+	display: inline-block;
+	float: left;
+	padding-left: 0px !important;
+}
+
+.left-footer li {
+	height: 21px;
+	list-style-type: none;
+}
+
+.Footer .left-footer img {
+	margin-top: 6px;
+	width: 28px;
+}
+
+.right-footer {
+	float: right;
+	margin-top: 24px;
+}
+
+.right-footer>div {
+	display: inline-block;
+}
+
+.right-footer img {
+	padding-left: 5px;
+	width: 75px;
+}
+
+.right-footer .iso-info {
+	font-family: 'Tahoma';
+	font-size: 9px;
+	font-weight: bold;
+	height: 15px;
+	padding: 4px 4px 0px 4px;
+	border: 1px solid #FFF;
+	border-radius: 1px;
+    display: inline-block;
+    margin-right: 6px;
+}
+
+.right-footer .iso-div {
+	margin-right: 23px;
+	height: 38px;
+	vertical-align: middle;
+}
+
+.Footer .contact p {
+	float: right;
+	padding-right: 6px;
+	font-size: 10px;
+	height: 12px;
+	color: #FFFFFF;
+}
+
+.contact .term a,
+.contact .intro a {
+	border-right: 1px solid #FFF;
+}
+
+.right-footer ul li {
+	display: inline-block;
+}
+
+.right-footer ul li>a {
+	color: #FFFFFF;
+	text-decoration: none;
+	font-size: 9px;
+    padding-right: 7px;
+    margin-left: 6px;
+}
+
+.contact-content {
+	padding-top: 115px;
+}
+
+.left-contact {
+	float: left;
+}
+
+.right-contact {
+	float: right;
+}
+
+.left-contact .contact-info,
+.right-contact .contact-online {
+	font-size: 30px;
+	margin-bottom: 15px;
+}
+
+.left-contact td {
+	padding-bottom: 4px;
+	font-size: 17px;
+}
+
+.left-contact .red-text {
+	color: red;
+}
+
+.left-contact .em-text {
+	color: rgb(0, 125, 87);
+}
+
+.right-contact #content_area textarea {
+	width: 275px;
+	border: 1px #ccc solid;
+	border-radius: 1px;
+}
+
+.right-contact .text_input {
+	width: 275px;
+	border: 1px #ccc solid;
+	border-radius: 1px;
+	height: 22px;
+}
+
+.right-contact .input {
+	height: 40px;
+}
+
+.right-contact .area-input {
+	height: 190px;
+}
+
+.right-contact .text-info {
+	padding-right: 5px;
+	font-size: 17px;
+}

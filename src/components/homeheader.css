@@ -1,0 +1,86 @@
+.Header .Top {
+	background-color: #007c57;
+	height: 85px;
+}
+
+.Header .Top .Row {
+	background-color: #007c57;
+	height: 85px;
+}
+
+.Header .Top ul {
+    display: flex;
+    align-items: center;
+    float: right;
+    height: 100%;
+}
+
+.Header .Top .Row>a {
+	display: inline-block;
+}
+
+.Header .Top .Row li {
+    position: relative;
+	display: block;
+    cursor: pointer;
+}
+
+.Header .Top .Row li>a {
+	color: #FFFFFF;
+	text-decoration: none;
+	font-family: roboto;
+	font-weight: lighter;
+	font-size: 18px;
+}
+
+.Header .Top .Row .selected>a:after {
+    content: "";
+    position: absolute;
+    height: 6px;
+    width: 6px;
+    top: 39px;
+    border-radius: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    left: 50%;
+    margin-left: -2px;
+}
+
+.Header .Top .Row img {
+	width: 91px;
+	margin-top: 13px;
+}
+
+.Header .Top .Row a img {
+	margin-left: 3px;
+	margin-top: 0px;
+	width: 98px;
+	height: 85px;
+}
+
+.Top .contact_li {
+	position: relative;
+}
+
+.Top .contact_li img {
+	position: absolute;
+	width: 14px !important;
+	height: 6px;
+	top: 22.5px;
+	right: 21px;
+}
+
+.Top .tutorial_li img {
+    position: absolute;
+    width: 14px !important;
+    height: 6px;
+    top: 65.5px;
+    right: 507px;
+}
+
+.contact_li {
+	margin-right: 35px;
+}
+
+.login_li {
+	margin-right: 34px;
+}

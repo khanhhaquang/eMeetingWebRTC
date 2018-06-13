@@ -1,0 +1,276 @@
+.loginbg {
+    background: url(../images/user/home/loginhomebg.jpg) no-repeat center;
+    overflow: hidden;
+    position: relative;
+}
+.loginbg {
+    overflow: inherit !important;
+}
+
+.home_header {
+    background: url(../images/user/home/bg_menu_center.png) repeat-x top;
+    float: center;
+    height: 90px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.home_header .bgmenucenter {
+    height: 100%;
+}
+.bgmenucenter {
+    background: url(../images/user/home/header.png) center bottom no-repeat;
+}
+
+center {
+    padding: 0px;
+}
+
+a:link {
+    color: #666;
+    text-decoration: none;
+}
+
+.login-emeeting-icon div {
+    width: 80px;
+    height: 80px;
+}
+
+#loginForm {
+    display: block;
+    position: relative;
+    margin-top: 55px;
+}
+
+.login_frame {
+    width: 571px;
+    height: auto;
+    background-color: #ededed;
+}
+
+.login_title {
+    width: 571px;
+    height: 38px;
+    background-color: #007d57;
+    text-align: center;
+    color: #ffffff;
+    font-size: 13px;
+    text-transform: uppercase;
+    line-height: 38px;
+}
+
+
+.login_body_other {
+    height: 275px;
+}
+.login_body {
+    width: auto;
+    border-left: 1px solid #7d7878;
+    border-right: 1px solid #7d7878;
+    border-bottom: 1px solid #7d7878;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.login_center {
+    width: auto;
+    height: auto;
+    margin-left: 30px;
+}
+.frame_left {
+    float: left;
+    background: none repeat scroll 0 0 transparent;
+    zoom: 1;
+}
+
+.formlogintb {
+    text-align: left;
+    font-size: 12px;
+    color: #333;
+    padding-top: 10px;
+    z-index: 100;
+}
+
+.login_input_wrapper {
+    position: relative;
+}
+
+.user_login {
+    background: url(../images/user/login/user_login.png) no-repeat scroll left center transparent;
+    width: 20px;
+    height: 20px;
+    left: 13px;
+    position: absolute;
+    top: -3px;
+}
+
+.login_input {
+    background-color: #ffffff!important;
+    width: 234px;
+    height: 28px;
+    border: 1px solid #a3a3a3;
+    font-size: 13px;
+    color: #666666;
+    text-indent: 40px;
+}
+
+.pass_login {
+    background: url(../images/user/login/pass_login.png) no-repeat scroll left center transparent;
+    width: 15px;
+    height: 19px;
+    left: 16px;
+    position: absolute;
+    top: -3px;
+}
+
+.login_input {
+    background-color: #ffffff!important;
+    width: 234px;
+    height: 28px;
+    border: 1px solid #a3a3a3;
+    font-size: 13px;
+    color: #666666;
+    text-indent: 40px;
+}
+
+.login_option {
+    font-size: 12px;
+    color: #666666;
+}
+.remember {
+    float: left;
+    width: 55%;
+}
+
+.remember span {
+    margin-left: 4px;
+}
+.login_remember {
+    cursor: default;
+}
+
+.login_btn {
+    background-color: #027e58;
+    border: 1px solid #027e58;
+    border-radius: 2px;
+    float: right;
+    width: 90px;
+    height: 33px;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 13px;
+    font-family: arial;
+    margin-top: 20px;
+}
+
+.frame_right {
+    float: right;
+    background: none repeat scroll 0 0 transparent;
+}
+
+.selectloginTB {
+    text-align: left;
+    margin-top: 21px;
+}
+a:link {
+    color: #666;
+    text-decoration: none;
+}
+
+.google-login {
+    background: url(../images/user/login/google_ico.png) no-repeat scroll left 22px center transparent;
+    background-color: #c85128;
+}
+
+.login-with:active{
+    border:none;
+}
+
+.login-with {
+    width: 235px;
+    height: 32px;
+    border-radius: 3px;
+    line-height: 32px;
+    margin-right: 30px;
+    border:none;
+    cursor: pointer;
+}
+.text-login-with {
+    text-align: left;
+    font-family: arial;
+    font-size: 13px;
+    color: #ffffff;
+}
+.fb-login {
+    background: url(../images/user/login/facebook_ico.png) no-repeat scroll left 22px center transparent;
+    background-color: #3759a0;
+}
+
+.recomendBrowser {
+    float: left;
+    height: 30px;
+    line-height: 38px;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 14px;
+    color: #d0230b;
+    text-align: left;
+    margin-top: 15px;
+    letter-spacing: -0.2px;
+}
+.firefox_logo {
+    float: right;
+    background: url(../images/user/login/firefox_logo.png) no-repeat scroll right center transparent;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+    margin-left: 6px;
+    text-indent: 32px;
+}
+
+#footer {
+    background: url(../images/private/bgfooter.png) repeat-x !important;
+    color: #fff !important;
+    height: 66px !important;
+    line-height: 66px !important;
+    width: 100% !important;
+}
+
+.footertext {
+    font-size: 12px;
+    color: #cfcfcf;
+    font-family: arial;
+    text-align: center;
+}
+
+#loading {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 0;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+    background-color: rgb(0, 0, 0);
+}
+#img_loading {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    filter: alpha(opacity=100);
+    -moz-opacity: 1;
+    -khtml-opacity: 1;
+    opacity: 1;
+    background: url(../images/loading_emeeting.gif) no-repeat center top 125px;
+    z-index: 10000;
+}
+
