@@ -20,7 +20,7 @@ class App extends Component {
           <Route path='/room/:id' component={RoomPage}/>
           <Route path='/emeeting' component={MainContent}/>
           <Route path='/login' component={Login}/>
-          <Route path='/' component={HomeContent}/> 
+          <Route path='/' component={RoomPage}/> 
         </Switch>
       </div>
     );

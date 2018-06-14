@@ -42,7 +42,93 @@
 .haicham {color: #ed1c24;}
 body > iframe {display: none;}
 
+.room-wrapper{
+  position: relative;
+  width: 100%;
+  background: #333;
+  margin: 0;
+}
+.video-container{
+  position: relative;
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+}
+.video-container video{
+  height: 300px;
+  width: 300px;
+  margin: 10px;
+}
+.media-controls {
+    position: absolute;
+    display: flex;
+    margin: 2ex 0;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    bottom: 5%;
+}
+.svg {
+    width: 30px;
+}
+.audio-button-false, .audio-button-true, .call-exit-button, .fullscreen-button, .hangup-button, .video-button-false, .video-button-true {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: rgba(44,44,44,.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    box-shadow: 0.2ex 0.2ex 1.5em #444;
+    transition: all .2s ease-out;
+    margin: 0 .4em;
+    cursor: pointer;
+}
 
+.call-exit-button:hover,
+.hangup-button:hover,
+.audio-button-true:hover,
+.audio-button-false:hover,
+.video-button-true:hover,
+.video-button-false:hover,
+.fullscreen-button:hover {
+    box-shadow: .4ex .4ex 3em #666;
+    background: rgba(64, 124, 247, 1)
+}
 
+:-webkit-full-screen .fullscreen-button .on {
+    display: block;
+}
+:-moz-full-screen .fullscreen-button .on {
+    display: block;
+}
+:-ms-fullscreen .fullscreen-button .on {
+    display: block;
+}
+:fullscreen .fullscreen-button .on { /* spec */
+    display: block;
+}
+:-webkit-full-screen .fullscreen-button .off {
+    display: none;
+}
+:-moz-full-screen .fullscreen-button .off {
+    display: none;
+}
+:-ms-fullscreen .fullscreen-button .off {
+    display: none;
+}
+:fullscreen .fullscreen-button .off { /* spec */
+    display: none;
+}
 
-
+.you-left,
+.remote-left,
+.hangup-button,
+.audio-button-true .on,
+.video-button-true .on,
+.video-button-false .off,
+.fullscreen-button .on,
+.room-occupied {
+	display: none;
+}

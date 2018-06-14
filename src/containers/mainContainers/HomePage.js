@@ -21,19 +21,19 @@ class HomePage extends Component {
     renderPublicRooms = () => publicRoom.map((value,index) => {
         return(
             <div className="roomElement roomElementOffline   " key={index}>
-                {/*phong hop khong bi khoa */}                        
-                    <div className="tooltopinfo closeSocket">
-                        <span className="showroomname">                         
+                {/*phong hop khong bi khoa */}
+                    <Link  to={"/room/"+ (index + 1)} className="tooltopinfo closeSocket">
+                        <span className="showroomname">
                                         {value}
                         </span>
-                        <Link to={"/room/"+ (index + 1)}>
-                            <span className="showstatusRoom">                                   
+                        <span>
+                            <span className="showstatusRoom">
                                             Bạn vào đây để tham gia
                             </span>
-                        </Link>
-                    </div>
-                {/* end phong hop khong bi khoa */}                                   
-            </div>		
+                        </span>
+                    </Link>
+                {/* end phong hop khong bi khoa */}
+            </div>
         )
     })
 
@@ -45,32 +45,32 @@ class HomePage extends Component {
                         <td className="colsleft" style={{paddingTop:"20px"}} valign="top">
                             <div id="privateRoom">
                                 <div id="div_meetings" className="meeting">
-                                    <div id="privateRoomContent" className="divlistrooms">   
+                                    <div id="privateRoomContent" className="divlistrooms">
                                         <div className="titlemeetingtype">PHÒNG HỌP RIÊNG</div>
                                         <div className="roomElement roomElementOffline ">
-                                                
+
                                                 <div className="new_room_left">
                                                     <label>mới</label>
                                                 </div>
 
                                                 <a >
                                                     <span className="editbutton" title="Sửa cuộc họp"></span>
-                                                </a>   
-                                                        
+                                                </a>
+
                                                 <a href="/emeeting/meetingRoomsFrontend/delete/11357" className="closeSocket">
                                                     <span className="deletebutton" title="Xóa cuộc họp"></span>
                                                 </a>
-                                                                                                                                                        
+
                                                 <a href="/emeeting/meetingRoomsFrontend/join/11357" className="tooltopinfo1 closeSocket">
-                                                    <span className="showroomname"> 
+                                                    <span className="showroomname">
                                                             1
                                                     </span>
-                                                        
+
                                                     <span className="showstatusRoom">Bấm vào đây để bắt đầu họp</span>
-                                                </a>		
+                                                </a>
                                         </div>
-                                    </div>                                                       
-                                {/* CUOC HOP SAP DIEN RA */}                            
+                                    </div>
+                                {/* CUOC HOP SAP DIEN RA */}
                                 </div>
                                 <div id="meeting_details_form" style={{padding:"0px"}} ></div>
                             </div>
@@ -78,10 +78,10 @@ class HomePage extends Component {
                     </tr>
                 <tr>
                     <td className="colsleft" style={{paddingTop:"20px"}} valign="top">
-                        <div id="fixroom">                                   
-                            <div id="publicRoomContent" className="titlemeetingtype">PHÒNG HỌP CÔNG CỘNG - CÓ THỂ SỬ DỤNG NGAY </div>                                                            
-                            {this.renderPublicRooms()}		                                                                      
-                        </div>				
+                        <div id="fixroom">
+                            <div id="publicRoomContent" className="titlemeetingtype">PHÒNG HỌP CÔNG CỘNG - CÓ THỂ SỬ DỤNG NGAY </div>
+                            {this.renderPublicRooms()}
+                        </div>
                     </td>
                 </tr>
                 </tbody>

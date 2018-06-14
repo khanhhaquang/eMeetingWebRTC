@@ -55,7 +55,7 @@
     -webkit-transform: rotate(-45deg);
 }
 
-.roomElement div span.editbutton {
+.roomElement a span.editbutton {
     background: url(../../images/user/home/editbutton.png) no-repeat scroll right top transparent;
     cursor: pointer;
     float: right;
@@ -64,7 +64,7 @@
     width: 10px;
 }
 
-.roomElement div span.deletebutton {
+.roomElement a span.deletebutton {
     background: url(../../images/user/home/deletebutton.png) no-repeat scroll right top transparent;
     cursor: pointer;
     float: right;
@@ -73,11 +73,11 @@
     width: 11px;
 }
 
-.roomElementOffline div span {
+.roomElementOffline a span {
     color: #858585;
     clear: left;
 }
-.roomElement div span {
+.roomElement a span {
     font-family: arial;
 }
 .roomElement span {
