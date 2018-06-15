@@ -31,6 +31,7 @@ class Contact extends Component {
                     <div className="left-contact">
                         <div className="contact-info">Thông tin liên hệ</div>
                         <table>
+                            <tbody>
                             <tr>
                                 <td>Tổng đài</td>
                                 <td className="red-text">: 1900 6632</td>
@@ -39,18 +40,19 @@ class Contact extends Component {
                                 <td style={{paddingTop: "4px"}}>Email </td>
                                 <td className="em-text"><span className="haicham">:</span> eMeeting@bkav.com.vn</td>
                             </tr>
+                            </tbody>
                         </table>
                     </div>
                     <div className="right-contact">
                         <div className="contact-online">Liên hệ trực tuyến</div>
-                        <form id="contact_forms" name="myforms" enctype="multipart/form-data"   accept-charset="UTF-8">
-                            <table cellpadding="0" cellspacing="0" width="100%" class="formprofile">
+                        <form id="contact_forms" name="myforms" encType="multipart/form-data"   acceptCharset="UTF-8">
+                            <table cellPadding="0" cellSpacing="0" width="100%" className="formprofile">
                                 <tbody>
                                     <tr className="input">
                                         <td className="text-info">Họ và tên:</td>							
                                         <td className="value">
                                             <input className="text_input" type="text" id="comment_fullname" 
-                                                    name="comment_fullname" autofocus="autofocus"/>
+                                                    name="comment_fullname" autoFocus="autofocus"/>
                                         </td>
                                     </tr>
                                     <tr>

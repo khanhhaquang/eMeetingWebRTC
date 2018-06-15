@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import {connect} from 'react-redux';
+import {Link, Redirect} from 'react-router-dom';
+
 import SimpleWebRTC from 'simplewebrtc';
 import CommunicationContainer from './CommunicationContainer.js'
 
@@ -18,87 +21,97 @@ class RoomPage extends Component {
     }
 
     toggleAudio = () => {
-      const audio = this.state.audio
-      if(webrtc){
-        if(audio) webrtc.mute()
-        else webrtc.unmute()
-        this.setState({
-          audio: !audio
-        })
-      }
+        const audio = this.state.audio
+        if(webrtc){
+            if(audio) webrtc.mute()
+            else webrtc.unmute()
+            this.setState({
+            audio: !audio
+            })
+        }
     }
 
     toggleVideo = () => {
-      const video = this.state.video
-      if(webrtc){
-        if(video) webrtc.pauseVideo()
-        else webrtc.resumeVideo()
-        this.setState({
-          video: !video
-        })
-      }
+        const video = this.state.video
+        if(webrtc){
+            if(video) webrtc.pauseVideo()
+            else webrtc.resumeVideo()
+            this.setState({
+            video: !video
+            })
+        } 
     }
 
     renderRemoteVideos = () => remoteVideos.map((value,index)=>{
-      return(
-        <video key={index} className="remoteVideo"></video>
-      )
+        return(
+            <video key={index} className="remoteVideo"></video>
+        ) 
     })
 
     componentWillMount() {
     }
 
     componentWillUnmount(){
-      webrtc.leaveRoom();
-      webrtc.disconnect();
+        webrtc.leaveRoom();
+        webrtc.disconnect();
     }
 
     componentDidMount() {
-      webrtc = new SimpleWebRTC({
-          // the id/element dom element that will hold "our" video
-          localVideoEl: 'localVideo',
-          // the id/element dom element that will hold remote videos
-          remoteVideosEl: 'remoteVideos',
-          // immediately ask for camera access
-          autoRequestMedia: true
-      });
+        const roomname = "publicroom" + window.location.pathname.split('/')[2]
+        console.log("roomname",roomname)
 
-      const remotecontainer = webrtc.getRemoteVideoContainer()
-      console.log(remotecontainer)
+        webrtc = new SimpleWebRTC({
+            // the id/element dom element that will hold "our" video
+            localVideoEl: 'localVideo',
+            // the id/element dom element that will hold remote videos
+            remoteVideosEl: 'remoteVideos',
+            // immediately ask for camera access
+            autoRequestMedia: true
+        });
 
-      webrtc.on('readyToCall', function () {
-          // you can name it anything
-          webrtc.joinRoom('1');
+        const remotecontainer = webrtc.getRemoteVideoContainer()
+        console.log(remotecontainer)
 
-      });
+        webrtc.on('readyToCall', function () {
+            // you can name it anything
+            webrtc.joinRoom(roomname);
 
-      webrtc.on('connectionReady', function (sessionId) {
-          console.log("sessionId",sessionId)
-          console.log(webrtc.getPeers(sessionId))
-      })
-      webrtc.on('createdPeer', function(peers){
-            console.log('peers',peers)
-      })
-      webrtc.on('videoRemoved', function(videoEl,peer){
-            console.log('peer',peer)
-      })
+        });
 
-
+        webrtc.on('connectionReady', function (sessionId) {
+            console.log("sessionId",sessionId)
+            console.log(webrtc.getPeers(sessionId))
+        })
+        webrtc.on('createdPeer', function(peers){
+                console.log('peers',peers)
+        })
+        webrtc.on('videoRemoved', function(videoEl,peer){
+                console.log('peer',peer)
+        })
 
     }
 
 
     render(){
+        if(this.props.logged === false) return <Redirect to="/login"/>
         return (
             <div className="room-wrapper" style={{height: window.innerHeight + "px"}} >
-              <div className="video-container">
-                <video id="localVideo"></video>
-                <div id="remoteVideos"></div>
-              </div>
-              <CommunicationContainer audio={this.state.audio} video={this.state.video} toggleAudio={this.toggleAudio} toggleVideo={this.toggleVideo}/>
+                <div className="video-container">
+                    <video id="localVideo"></video>
+                    <div id="remoteVideos"></div>
+                </div>
+                <CommunicationContainer audio={this.state.audio} video={this.state.video} toggleAudio={this.toggleAudio} toggleVideo={this.toggleVideo}/>
             </div>
         );
     }
 }
 
-export default RoomPage
+const mapStateToProps = (state) =>{
+    return {
+        isLogging : state.loginData.isLogging,
+        logged : state.loginData.logged,
+        data: state.loginData.result
+    }
+}
+
+export default connect(mapStateToProps)(RoomPage);

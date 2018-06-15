@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import './login.css';
+import {login} from '../actions/Login.js'
+import {connect} from 'react-redux';
+
 import Comment from '../components/Comment.js'
 import { Redirect,Link } from "react-router-dom";
 
@@ -13,27 +16,33 @@ class Login extends Component {
         this.state = {
             isLogged: false
         }
+
     }
 
-    login = (type) =>{
+    login = (data,type) =>{
         if(type === "facebook")
             this.setState({isLogged: true})
 
         if(type === "google")
             this.setState({isLogged: true})
+
+        this.props.dispatch(login(data,type))
+        
     }
 
     responseGoogle = (res) =>{
         console.log(res)
+        if(res.profileObj)
+            this.login(res.profileObj,"google")
     }
     responseFacebook = (res) =>{
         console.log(res)
-        if(res)
-        this.login("facebook")
+        if(res.name)
+            this.login(res,"facebook")
     }
 
     render() {
-        if(this.state.isLogged)
+        if(this.props.logged)
         return <Redirect to="/emeeting"/>
 
         return(
@@ -124,7 +133,7 @@ class Login extends Component {
                             <tr>
                                 <td style={{border: "none"}}>
                                         <GoogleLogin className="google-login login-with"
-                                            clientId={'56257438052-r8hj2rs8gj4hmg5ogbkiikg1ibkm3lor.apps.googleusercontent.com'}
+                                            clientId={'588674211817-atpbjgrtp9cve0dljledk38t9id9d9vl.apps.googleusercontent.com'}
                                             onSuccess={this.responseGoogle}
                                             onFailure={this.responseGoogle}
                                         >
@@ -181,5 +190,13 @@ class Login extends Component {
     }
 
 }
+const mapStateToProps = (state) =>{
+    return {
+        isLogging : state.loginData.isLogging,
+        logged : state.loginData.logged,
+        loginType: state.loginData.logged,
+        data: state.loginData.result
+    }
+}
 
-export default Login;
+export default connect(mapStateToProps)(Login);

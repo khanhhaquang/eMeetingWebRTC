@@ -9,20 +9,25 @@ import Login from './containers/Login.js';
 import MainContent from './containers/MainContent.js';
 import RoomPage from './containers/roomChat/RoomPage.js';
 
+import {Provider} from 'react-redux';
+import store from './store.js';
 
-import {Redirect,Switch,Route} from 'react-router-dom';
+
+import {Switch,Route} from 'react-router-dom';
 
 class App extends Component {
   render() {
     return (
+      <Provider store={store}>
       <div className="App layout">
         <Switch>
           <Route path='/room/:id' component={RoomPage}/>
           <Route path='/emeeting' component={MainContent}/>
           <Route path='/login' component={Login}/>
-          <Route path='/' component={RoomPage}/> 
+          <Route path='/' component={HomeContent}/> 
         </Switch>
       </div>
+      </Provider>
     );
   }
 }

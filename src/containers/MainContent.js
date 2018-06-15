@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './main.css';
-import { Link,Route,Switch } from "react-router-dom";
+import { Link,Route,Switch ,Redirect } from "react-router-dom";
+import {connect} from 'react-redux';
 
 // import containers
 import HomePage from './mainContainers/HomePage.js'
@@ -22,6 +23,15 @@ class MainContent extends Component {
     }
 
     render() {
+        let username = "";
+        if(this.props.loginType === "facebook")
+            username = this.props.data.name
+        if(this.props.loginType === "google")
+            username = this.props.data.givenName + " " + this.props.data.familyName
+        console.log("username",username)
+
+        if(this.props.logged === false) return <Redirect to="/login"/>
+        
         return(
             <div id="over">
                 <Comment/>
@@ -40,11 +50,11 @@ class MainContent extends Component {
                         <span id="welcomebar">
                             <table cellSpacing="0" cellPadding="0">
                                 <tbody><tr>
-                                    <td><span className="hellouser"> Xin chào Khánh Hà Quang
+                                    <td><span className="hellouser"> Xin chào {username}
                                     </span></td>
                                 </tr>
                                 <tr>
-                                    <td style={{width: "100%"}} ><span className="menuButton"> <a href="/emeeting/userfrontend/logout" className="logout closeSocket" style={{paddingRight: "0px", marginRight: "0px"}} >
+                                    <td style={{width: "100%"}} ><span className="menuButton"> <a href="/" className="logout closeSocket" style={{paddingRight: "0px", marginRight: "0px"}} >
                                                 Thoát
                                             </a>
                                     </span> <span className="menuButton" style={{borderRight: "1px solid #007d57"}} > <a onClick={() => {return null}} id="setting">Thiết lập</a>
@@ -83,5 +93,12 @@ class MainContent extends Component {
     }
 
 }
+const mapStateToProps = (state) =>{
+    return {
+        logged : state.loginData.logged,
+        loginType: state.loginData.loginType,
+        data: state.loginData.result
+    }
+}
 
-export default MainContent;
+export default connect(mapStateToProps)(MainContent);

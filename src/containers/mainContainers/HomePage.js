@@ -26,10 +26,8 @@ class HomePage extends Component {
                         <span className="showroomname">
                                         {value}
                         </span>
-                        <span>
-                            <span className="showstatusRoom">
+                        <span className="showstatusRoom">
                                             Bạn vào đây để tham gia
-                            </span>
                         </span>
                     </Link>
                 {/* end phong hop khong bi khoa */}
@@ -46,7 +44,7 @@ class HomePage extends Component {
                             <div id="privateRoom">
                                 <div id="div_meetings" className="meeting">
                                     <div id="privateRoomContent" className="divlistrooms">
-                                        <div className="titlemeetingtype">PHÒNG HỌP RIÊNG</div>
+                                        {/*<div className="titlemeetingtype">PHÒNG HỌP RIÊNG</div>
                                         <div className="roomElement roomElementOffline ">
 
                                                 <div className="new_room_left">
@@ -68,7 +66,7 @@ class HomePage extends Component {
 
                                                     <span className="showstatusRoom">Bấm vào đây để bắt đầu họp</span>
                                                 </a>
-                                        </div>
+                                        </div>*/}
                                     </div>
                                 {/* CUOC HOP SAP DIEN RA */}
                                 </div>

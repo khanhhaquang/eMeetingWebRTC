@@ -7,7 +7,7 @@ const config = {
         './src/index.js'
     ],
     plugins: [
-            new CleanWebpackPlugin(['dist']),
+            new CleanWebpackPlugin(['public']),
             new HtmlWebpackPlugin({
                 title: 'Production',
                 template: 'src/index.html',
@@ -44,7 +44,7 @@ const config = {
         extensions: ['*', '.js', '.jsx','.css']
     },
     output: {
-        path: __dirname + '/dist',
+        path: __dirname + '/public',
         publicPath: '',
         filename: 'bundle.js'
     },
